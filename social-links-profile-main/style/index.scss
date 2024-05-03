@@ -1,0 +1,101 @@
+$primary: hsl(75, 94%, 57%);
+$neutral-white: hsl(0, 0%, 100%);
+$neutral-grey: hsl(0, 0%, 20%);
+$neutral-grey-dark: hsl(0, 0%, 12%);
+$neutral-black: hsl(0, 0%, 8%);
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    font-style: normal;
+}
+
+body {
+    background-color: $neutral-black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+li>a {
+    display: block;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 0;
+    background-color: $neutral-grey;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: $primary;
+        color: $neutral-grey;
+    }
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2,
+p,
+a {
+    font-size: 14px;
+}
+
+p {
+    margin: 28px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: max-content;
+    margin: 40px auto;
+    background-color: $neutral-grey-dark;
+    border-radius: 16px;
+    padding: 36px;
+}
+
+.avatar-wrapper {
+    width: 35%;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.text {
+    &-white {
+        color: $neutral-white;
+    }
+
+    &-green {
+        color: $primary;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 16px;
+    color: $neutral-white;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
