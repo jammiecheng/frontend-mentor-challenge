@@ -88,3 +88,9 @@ hgroup>p {
         color: hsl(228, 45%, 44%);
     }
 }
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 327px;
+    }
+}

@@ -78,4 +78,10 @@ hgroup > p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 327px;
+  }
 }/*# sourceMappingURL=index.css.map */
