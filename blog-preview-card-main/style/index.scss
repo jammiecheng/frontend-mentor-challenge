@@ -1,0 +1,90 @@
+$primary: hsl(47, 88%, 63%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 50%);
+$black: hsl(0, 0%, 7%);
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Figtree;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: $primary;
+    margin: 48px 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 24px;
+    transition: all 0.2s ease;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+hgroup>p {
+    font-size: 16px;
+    color: $grey;
+}
+
+.container {
+    background-color: $white;
+    max-width: 384px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid $black;
+    padding: 24px;
+    box-shadow: 8px 8px 0 0 #000;
+}
+
+.tag {
+    display: inline-block;
+    background-color: $primary;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-top: 24px;
+}
+
+.avatar-wrapper {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 12px;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
