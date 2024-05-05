@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  font-size: 16px;
+  font-family: Work Sans;
+  font-weight: 400;
+  background-repeat: no-repeat;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-top: 16px;
+}
+
+li {
+  list-style: none;
+}
+li:nth-child(-n+3) {
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 150px auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0 0 0 16px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+p {
+  font-size: 16px;
+  color: hsl(292, 16%, 49%);
+}
+
+button {
+  width: 100%;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  line-height: none;
+  cursor: pointer;
+}
+button:hover h2 {
+  color: rgb(165, 25, 227);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 100%;
+    margin: 150px 16px;
+  }
+}/*# sourceMappingURL=index.css.map */
